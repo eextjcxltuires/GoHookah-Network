@@ -22,3 +22,27 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+
+  assets:
+    - assets/icons/
+    - assets/images/
+
+  fonts:
+    - family: SFProDisplayBold
+      fonts:
+        - asset: assets/fonts/sf-pro-display/sf-pro-display-bold.otf
+    - family: SFProDisplayMedium
+      fonts:
+        - asset: assets/fonts/sf-pro-display/sf-pro-display-medium.otf
+    - family: SFProDisplayRegular
+      fonts:
+        - asset: assets/fonts/sf-pro-display/sf-pro-display-regular.otf
+    - family: SFProTextBold
+      fonts:
+        - asset: assets/fonts/sf-pro-text/sf-pro-text-bold.otf
+    - family: SFProTextMedium
+      fonts:
+        - asset: assets/fonts/sf-pro-text/sf-pro-text-medium.otf
+    - family: SFProTextRegular
+      fonts:
+        - asset: assets/fonts/sf-pro-text/sf-pro-text-regular.otf
