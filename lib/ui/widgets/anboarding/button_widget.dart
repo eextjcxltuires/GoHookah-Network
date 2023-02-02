@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 
 class ButtonWidget extends StatelessWidget {
   final Function()? onPressed;
+
   final Color color;
+
   final String title;
 
   const ButtonWidget({
@@ -25,6 +27,8 @@ class ButtonWidget extends StatelessWidget {
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(100.0),
         ),
+
+        // Text: Title Text.
         child: Text(
           title,
           style: const TextStyle(

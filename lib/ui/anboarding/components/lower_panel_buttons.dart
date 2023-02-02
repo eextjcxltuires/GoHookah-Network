@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
-import '../../widgets/button_widget.dart';
+import '../../widgets/anboarding/button_widget.dart';
 
-class WelcomePanelButtons extends StatelessWidget {
-  const WelcomePanelButtons({Key? key}) : super(key: key);
+class LowerPanelButtons extends StatelessWidget {
+  const LowerPanelButtons({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

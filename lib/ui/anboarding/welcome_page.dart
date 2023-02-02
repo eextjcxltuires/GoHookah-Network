@@ -1,37 +1,63 @@
 import 'package:flutter/material.dart';
 
-import 'components/welcome_description_text.dart';
-import 'components/welcome_logotype.dart';
-import 'components/welcome_panel_buttons.dart';
+import 'components/description_section.dart';
+import 'components/indicator.dart';
+import 'components/lower_panel_buttons.dart';
 
-class WelcomePage extends StatelessWidget {
+class WelcomePage extends StatefulWidget {
   const WelcomePage({Key? key}) : super(key: key);
+
+  @override
+  State<WelcomePage> createState() => _WelcomePageState();
+}
+
+class _WelcomePageState extends State<WelcomePage> {
+  late PageController controller;
+
+  int indicator = 0;
+
+  @override
+  void initState() {
+    controller = PageController(initialPage: 0);
+
+    super.initState();
+  }
+
+  @override
+  void dispose() {
+    controller.dispose();
+
+    super.dispose();
+  }
+
+  void animation(int page) {
+    return setState(() {
+      indicator = page;
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color(0xFF2B2B2B),
-      body: SafeArea(
-        child: Padding(
-          padding: const EdgeInsets.fromLTRB(0, 160.0, 0, 40.0),
-          child: Stack(
-            alignment: Alignment.center,
-            children: <Widget>[
-              // Description.
-              Column(
-                children: const <Widget>[
-                  // Logotype: Image.
-                  WelcomeLogotype(),
+      body: Padding(
+        padding: const EdgeInsets.fromLTRB(0, 160.0, 0, 40.0),
+        child: Stack(
+          alignment: Alignment.center,
+          children: <Widget>[
+            // Description section: logotype, title and description.
+            DescriptionSection(
+              onPageChanged: (int page) => animation(page),
+              controller: controller,
+            ),
+            // Indicator.
+            Indicator(
+              indicator: indicator,
+            ),
 
-                  // Description: Title + Description Text.
-                  WelcomeDescriptionText(),
-                ],
-              ),
-
-              // lower panel buttons.
-              const WelcomePanelButtons(),
-            ],
-          ),
+            // Lower panel buttons.
+            const LowerPanelButtons(),
+          ],
         ),
       ),
     );
