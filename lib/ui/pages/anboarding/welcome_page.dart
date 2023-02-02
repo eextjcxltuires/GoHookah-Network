@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import 'components/description_section.dart';
 import 'components/indicator.dart';
 import 'components/lower_panel_buttons.dart';

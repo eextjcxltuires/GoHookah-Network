@@ -1,6 +1,5 @@
+import 'package:application/ui/pages/anboarding/widgets/page_widget.dart';
 import 'package:flutter/material.dart';
-
-import '../../widgets/anboarding/page_widget.dart';
 
 class DescriptionSection extends StatelessWidget {
   final PageController? controller;
