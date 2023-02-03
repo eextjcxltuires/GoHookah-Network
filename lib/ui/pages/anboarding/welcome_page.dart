@@ -40,7 +40,7 @@ class _WelcomePageState extends State<WelcomePage> {
     return Scaffold(
       backgroundColor: const Color(0xFF2B2B2B),
       body: Padding(
-        padding: const EdgeInsets.fromLTRB(0, 160.0, 0, 40.0),
+        padding: const EdgeInsets.fromLTRB(16.0, 160.0, 16.0, 40.0),
         child: Stack(
           alignment: Alignment.center,
           children: <Widget>[
