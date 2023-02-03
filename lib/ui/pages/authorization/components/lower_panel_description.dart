@@ -1,8 +1,26 @@
+import 'package:application/ui/pages/authorization/login_page.dart';
+import 'package:application/ui/pages/authorization/register_page.dart';
 import 'package:application/ui/widgets/button_widget.dart';
 import 'package:flutter/material.dart';
 
 class LowerPanelDescription extends StatelessWidget {
   const LowerPanelDescription({Key? key}) : super(key: key);
+
+  // Navigation: Transition to Login Page.
+  void login(context) {
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => const LoginPage()),
+    );
+  }
+
+  // Navigation: Transition to Register Page.
+  void register(context) {
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => const RegisterPage()),
+    );
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -18,17 +36,17 @@ class LowerPanelDescription extends StatelessWidget {
 
             // Button: Login.
             ButtonWidget(
-              onPressed: () {},
-              color: const Color(0xFFFFC107),
+              onPressed: () => login(context),
               title: 'Войти',
+              color: const Color(0xFFFFC107),
             ),
             const SizedBox(height: 10.0),
 
             // Button: Sign Up.
             ButtonWidget(
-              onPressed: () {},
-              color: const Color(0xFF767676),
+              onPressed: () => register(context),
               title: 'Зарегистрироваться',
+              color: const Color(0xFF767676),
             ),
           ],
         ),
