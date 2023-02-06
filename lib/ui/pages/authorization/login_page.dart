@@ -61,7 +61,7 @@ class LoginPage extends StatelessWidget {
                 const SizedBox(height: 10.0),
 
                 // Text Form: Password.
-                const PasswordTextForm(),
+                const PasswordTextForm(label: 'Пароль'),
                 const SizedBox(height: 25.0),
 
                 // Text Button.

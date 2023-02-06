@@ -1,27 +1,18 @@
+import 'package:application/ui/pages/home/home_page.dart';
 import 'package:flutter/material.dart';
+import 'package:application/ui/widgets/button_widget.dart';
 
-import 'code_page.dart';
-import 'register_page.dart';
-import 'widgets/authorization_button.dart';
-import 'widgets/phone_text_form.dart';
 import 'widgets/title_page.dart';
+import 'widgets/password_text_form.dart';
 
-class ForgotPasswordPage extends StatelessWidget {
-  const ForgotPasswordPage({Key? key}) : super(key: key);
+class ChangePasswordPage extends StatelessWidget {
+  const ChangePasswordPage({Key? key}) : super(key: key);
 
-  // Navigation: Transition to Code Page.
-  void code(context) {
+  // Navigation: Transition to Home Page.
+  void home(context) {
     Navigator.push(
       context,
-      MaterialPageRoute(builder: (context) => const CodePage()),
-    );
-  }
-
-  // Navigation: Transition to Register Page.
-  void register(context) {
-    Navigator.push(
-      context,
-      MaterialPageRoute(builder: (context) => const RegisterPage()),
+      MaterialPageRoute(builder: (context) => const HomePage()),
     );
   }
 
@@ -45,23 +36,31 @@ class ForgotPasswordPage extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: const <Widget>[
-                // Text: Description.
+                // Description Text.
                 DescriptionText(),
                 SizedBox(height: 15.0),
 
-                // Text Form: Phone.
-                PhoneTextForm(),
+                // Text Form: Password.
+                PasswordTextForm(label: 'Пароль'),
+                SizedBox(height: 10.0),
+
+                // Text Form: Confirm Password.
+                PasswordTextForm(label: 'Повторите пароль'),
               ],
             ),
           ),
 
-          // Lower panel description.
-          AuthorizationButton(
-            title2: 'Зарегистрируйтесь!',
-            title1: 'Продолжить',
-            text: 'Нет аккаунта?',
-            onPressed2: () => register(context),
-            onPressed1: () => code(context),
+          // Widget Button: Continue Button.
+          Padding(
+            padding: const EdgeInsets.fromLTRB(0, 0, 0, 40.0),
+            child: Align(
+              alignment: Alignment.bottomCenter,
+              child: ButtonWidget(
+                color: const Color(0xFFFFC107),
+                title: 'Продолжить',
+                onPressed: () => home(context),
+              ),
+            ),
           ),
         ],
       ),
@@ -75,7 +74,7 @@ class DescriptionText extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Text(
-      'Введите Ваш номер телефона, и мы отправим на него код для восстановления пароля.',
+      'Придумайте новый пароль для того, чтобы войти на сервис.',
       style: TextStyle(
         fontFamily: 'SFProTextBold',
         color: Color(0xFF767676),
