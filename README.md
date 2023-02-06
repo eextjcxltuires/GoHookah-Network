@@ -1,16 +1,86 @@
-# Application.
+# GoHookah-Network.
 
-A new Flutter project.
+This application was written in the studio. Initially, it was as an application for an internship, where they could evaluate my knowledge. Subsequently, when they saw, that I could write the application, they found investors, and the application went from a test version to a commercial one.
+
+After, I left the studio, had limited access to the previously written and did not have the source code. In this repository I am trying to at least some part of the past application, but without affecting the copyrights.
 
 ## Getting Started.
 
 This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+How do I start it up?
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab).
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook).
+Terminal:
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```
+- gh repo clone eextjcxltuires/GoHookah-Network.
+```
+
+IDE VS Code:
+
+```
+file, pubspec.yaml:
+
+- flutter pub get packages.
+```
+
+```
+file, main.dart:
+
+- flutter run.
+```
+
+### Review.
+
+<table>
+  <tr>
+    <td>Welcome Page - 1.</td>
+    <td>Welcome Page - 2.</td>
+    <td>Welcome Page - 3.</td>
+  </tr>
+  <tr>
+    <td><img src="assets/result/welcome-page1.png" width=270 height=480></td>
+    <td><img src="assets/result/welcome-page2.png" width=270 height=480></td>
+    <td><img src="assets/result/welcome-page3.png" width=270 height=480></td>
+  </tr>
+ </table>
+
+<table>
+  <tr>
+    <td>Authorization Page.</td>
+  </tr>
+  <tr>
+    <td><img src="assets/result/authorization-page.png" width=270 height=480></td>
+  </tr>
+ </table>
+
+<table>
+  <tr>
+    <td>Login Page.</td>
+  </tr>
+  <tr>
+    <td><img src="assets/result/login-page.png" width=270 height=480></td>
+  </tr>
+ </table>
+
+<table>
+  <tr>
+    <td>Register Page.</td>
+  </tr>
+  <tr>
+    <td><img src="assets/result/register-page.png" width=270 height=480></td>
+  </tr>
+ </table>
+
+<table>
+  <tr>
+    <td>Recovery Page.</td>
+    <td>Code Page.</td>
+    <td>Password Page.</td>
+  </tr>
+  <tr>
+    <td><img src="assets/result/forgot-password-page.png" width=270 height=480></td>
+    <td><img src="assets/result/code-page.png" width=270 height=480></td>
+    <td><img src="assets/result/change-password-page.png" width=270 height=480></td>
+  </tr>
+ </table>
