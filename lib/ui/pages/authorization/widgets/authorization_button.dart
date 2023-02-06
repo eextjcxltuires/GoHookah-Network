@@ -80,7 +80,7 @@ class TextButtonWidget extends StatelessWidget {
 
         // Button: Transition on the Next Page.
         TextButton(
-          onPressed: () {},
+          onPressed: onPressed,
           child: Text(
             title,
             style: const TextStyle(
