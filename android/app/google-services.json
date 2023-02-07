@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "768510874026",
+    "project_id": "gohookah-network",
+    "storage_bucket": "gohookah-network.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:768510874026:android:ddd11d6dd6fe510894dbd3",
+        "android_client_info": {
+          "package_name": "com.example.application"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "768510874026-o8vu4v2p0fr3nklkj6rls5o50pk4i93v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAsHIft3BuH5dIvKuMKzwe8hFBmrnJ3pDY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "768510874026-o8vu4v2p0fr3nklkj6rls5o50pk4i93v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
