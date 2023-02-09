@@ -32,6 +32,8 @@ file, main.dart:
 
 ### Review.
 
+Start pages (welcome). Appear first, when the application is opened.
+
 <table>
   <tr>
     <td>Welcome Page - 1.</td>
@@ -45,32 +47,22 @@ file, main.dart:
   </tr>
  </table>
 
+Pages of authorization (page of choice, login or else, registration).
+
 <table>
   <tr>
     <td>Authorization Page.</td>
-  </tr>
-  <tr>
-    <td><img src="assets/result/authorization-page.png" width=270 height=480></td>
-  </tr>
- </table>
-
-<table>
-  <tr>
     <td>Login Page.</td>
-  </tr>
-  <tr>
-    <td><img src="assets/result/login-page.png" width=270 height=480></td>
-  </tr>
- </table>
-
-<table>
-  <tr>
     <td>Register Page.</td>
   </tr>
   <tr>
+    <td><img src="assets/result/authorization-page.png" width=270 height=480></td>
+    <td><img src="assets/result/login-page.png" width=270 height=480></td>
     <td><img src="assets/result/register-page.png" width=270 height=480></td>
   </tr>
  </table>
+
+Additional section - forgot password recovery page. Recovery procedure.
 
 <table>
   <tr>

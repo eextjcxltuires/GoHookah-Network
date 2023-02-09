@@ -9,6 +9,7 @@ class HomePage extends StatelessWidget {
       backgroundColor: const Color(0xFF2B2B2B),
       body: Column(
         children: const <Widget>[
+          // Text: Title Text.
           Padding(
             padding: EdgeInsets.fromLTRB(30.0, 60.0, 16.0, 0),
             child: Text(
@@ -22,6 +23,8 @@ class HomePage extends StatelessWidget {
               ),
             ),
           ),
+
+          // Text Form: Search.
         ],
       ),
     );
