@@ -1,4 +1,3 @@
-import 'package:application/ui/pages/authorization/authorization_page.dart';
 import 'package:application/ui/pages/home/home_page.dart';
 import 'package:application/ui/widgets/button_widget.dart';
 import 'package:flutter/material.dart';
@@ -6,15 +5,11 @@ import 'package:flutter/material.dart';
 class LowerPanelButtons extends StatelessWidget {
   const LowerPanelButtons({Key? key}) : super(key: key);
 
-  // Navigation: Transition to Authorization Page.
-  void authorization(context) {
-    Navigator.push(
-      context,
-      MaterialPageRoute(builder: (context) => const AuthorizationPage()),
-    );
-  }
+  // description:
 
-  // Navigation: Transition to Home Page.
+  // the transition function,
+  // which allows from one page to another.
+
   void home(context) {
     Navigator.push(
       context,
@@ -29,15 +24,19 @@ class LowerPanelButtons extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.end,
         children: <Widget>[
-          // Button: Authorization.
+          // description:
+          // custom button widget.
+
           ButtonWidget(
-            onPressed: () => authorization(context),
             title: 'Авторизация',
             color: const Color(0xFFFFC107),
+            onPressed: () {},
           ),
           const SizedBox(height: 10.0),
 
-          // Button: Continue.
+          // description:
+          // custom button widget.
+
           ButtonWidget(
             onPressed: () => home(context),
             title: 'Продолжить',
