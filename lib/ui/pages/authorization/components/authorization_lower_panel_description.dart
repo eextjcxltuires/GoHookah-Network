@@ -1,0 +1,85 @@
+import 'package:application/ui/widgets/button_widget.dart';
+import 'package:flutter/material.dart';
+
+class AuthorizationLowerPanelDescription extends StatelessWidget {
+  const AuthorizationLowerPanelDescription({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.fromLTRB(0, 0, 0, 40.0),
+      child: Align(
+        alignment: Alignment.bottomCenter,
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.end,
+          children: <Widget>[
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: <Widget>[
+                // description:
+                // title text.
+
+                title(),
+
+                // description:
+                // description text.
+
+                description(),
+              ],
+            ),
+
+            // description:
+            // custom button widget.
+
+            ButtonWidget(
+              title: 'Войти',
+              color: const Color(0xFFFFC107),
+              onPressed: () {},
+            ),
+            const SizedBox(height: 10.0),
+
+            // description:
+            // custom button widget.
+
+            ButtonWidget(
+              title: 'Зарегистрироваться',
+              color: const Color(0xFF767676),
+              onPressed: () {},
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  // the widget, that displays the title text.
+
+  Widget title() => const Text(
+        'Профиль',
+        textAlign: TextAlign.start,
+        style: TextStyle(
+          fontFamily: 'SFProDisplayBold',
+          color: Color(0xFFF6F7FB),
+          fontSize: 34.0,
+          fontWeight: FontWeight.w700,
+          letterSpacing: 0.27,
+        ),
+      );
+
+  // the widget, that displays the description text.
+
+  Widget description() => const Padding(
+        padding: EdgeInsets.fromLTRB(0, 15.0, 0, 45.0),
+        child: Text(
+          'Войдите в аккаунт или \nзарегистрируйтесь, чтобы пользоваться \nвсеми возможностями сервиса.',
+          textAlign: TextAlign.start,
+          style: TextStyle(
+            fontFamily: 'SFProDisplayRegular',
+            color: Color(0xFF767676),
+            fontSize: 20.0,
+            fontWeight: FontWeight.w400,
+            letterSpacing: -0.41,
+          ),
+        ),
+      );
+}
