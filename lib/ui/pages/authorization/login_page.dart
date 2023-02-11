@@ -1,5 +1,5 @@
 import 'widgets/top_panel_desciption.dart';
-import 'package:application/ui/pages/authorization/components/login/login_lower_panel_description.dart';
+import 'components/login/login_lower_panel_description.dart';
 import 'package:flutter/material.dart';
 import 'widgets/text_field_widget.dart';
 

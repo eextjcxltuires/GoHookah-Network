@@ -1,3 +1,4 @@
+import 'package:application/ui/pages/authorization/registration_page.dart';
 import 'package:application/ui/widgets/button_widget.dart';
 import 'package:application/ui/pages/authorization/login_page.dart';
 import 'package:flutter/material.dart';
@@ -14,6 +15,18 @@ class AuthorizationLowerPanelDescription extends StatelessWidget {
     Navigator.push(
       context,
       MaterialPageRoute(builder: (context) => const LoginPage()),
+    );
+  }
+
+  // description:
+
+  // the transition function,
+  // which allows from one page to another.
+
+  void registration(context) {
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => const RegistrationPage()),
     );
   }
 
@@ -55,9 +68,9 @@ class AuthorizationLowerPanelDescription extends StatelessWidget {
             // custom button widget.
 
             ButtonWidget(
+              onPressed: () => registration(context),
               title: 'Зарегистрироваться',
               color: const Color(0xFF767676),
-              onPressed: () {},
             ),
           ],
         ),

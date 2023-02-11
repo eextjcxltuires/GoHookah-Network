@@ -1,11 +1,11 @@
-import 'package:application/ui/pages/authorization/registration_page.dart';
+import 'package:application/ui/pages/authorization/login_page.dart';
+import 'package:application/ui/pages/authorization/widgets/lower_text_button_widget.dart';
 import 'package:application/ui/pages/home/home_page.dart';
 import 'package:application/ui/widgets/button_widget.dart';
-import 'package:application/ui/pages/authorization/widgets/lower_text_button_widget.dart';
 import 'package:flutter/material.dart';
 
-class LoginLowerPanelDescription extends StatelessWidget {
-  const LoginLowerPanelDescription({Key? key}) : super(key: key);
+class RegistrationLowerPanelDescription extends StatelessWidget {
+  const RegistrationLowerPanelDescription({Key? key}) : super(key: key);
 
   // description:
 
@@ -24,10 +24,10 @@ class LoginLowerPanelDescription extends StatelessWidget {
   // the transition function,
   // which allows from one page to another.
 
-  void registration(context) {
+  void login(context) {
     Navigator.push(
       context,
-      MaterialPageRoute(builder: (context) => const RegistrationPage()),
+      MaterialPageRoute(builder: (context) => const LoginPage()),
     );
   }
 
@@ -43,17 +43,7 @@ class LoginLowerPanelDescription extends StatelessWidget {
           ButtonWidget(
             onPressed: () => home(context),
             color: const Color(0xFFFFC107),
-            title: 'Войти',
-          ),
-          const SizedBox(height: 20.0),
-
-          // description:
-          // custom button widget.
-
-          ButtonWidget(
-            onPressed: () {},
-            color: const Color(0xFF767676),
-            title: 'Войти c помощью Google',
+            title: 'Зарегистрироваться',
           ),
           const SizedBox(height: 20.0),
 
@@ -61,9 +51,9 @@ class LoginLowerPanelDescription extends StatelessWidget {
           // Lower text button widget.
 
           LowerTextButtonWidget(
-            onPressed: () => registration(context),
-            part1: 'Нет аккаунта? ',
-            part2: ' Зарегистрируйтесь!',
+            onPressed: () => login(context),
+            part1: 'Есть аккаунт? ',
+            part2: ' Войдите!',
           ),
         ],
       ),

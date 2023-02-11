@@ -5,15 +5,17 @@ class LowerTextButtonWidget extends StatelessWidget {
     Key? key,
     required this.part1,
     required this.part2,
+    required this.onPressed,
   }) : super(key: key);
 
   final String part1;
   final String part2;
+  final Function() onPressed;
 
   @override
   Widget build(BuildContext context) {
     return TextButton(
-      onPressed: () {},
+      onPressed: onPressed,
       child: RichText(
         text: TextSpan(
           children: [
