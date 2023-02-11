@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class Logotype extends StatelessWidget {
-  const Logotype({Key? key}) : super(key: key);
+class AuthorizationLogotype extends StatelessWidget {
+  const AuthorizationLogotype({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

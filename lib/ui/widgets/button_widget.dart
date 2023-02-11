@@ -1,18 +1,16 @@
 import 'package:flutter/material.dart';
 
 class ButtonWidget extends StatelessWidget {
-  final Function()? onPressed;
-
-  final Color color;
-
-  final String title;
-
   const ButtonWidget({
     Key? key,
     required this.onPressed,
     required this.color,
     required this.title,
   }) : super(key: key);
+
+  final Function()? onPressed;
+  final Color color;
+  final String title;
 
   @override
   Widget build(BuildContext context) {
@@ -25,10 +23,12 @@ class ButtonWidget extends StatelessWidget {
         textColor: Colors.white,
         padding: const EdgeInsets.all(16),
         shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(100.0),
+          borderRadius: BorderRadius.circular(15.0),
         ),
 
-        // Text: Title Text.
+        // description:
+        // the text that appears on the button.
+
         child: Text(
           title,
           style: const TextStyle(
