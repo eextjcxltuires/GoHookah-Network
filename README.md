@@ -32,28 +32,32 @@ file, main.dart:
 
 ### Review.
 
-<table>
-  <tr>
-    <td>Welcome Page - 1.</td>
-    <td>Welcome Page - 2.</td>
-    <td>Welcome Page - 3.</td>
-  </tr>
-  <tr>
-    <td><img src="assets/result/welcome-page1.png" width=270 height=480></td>
-    <td><img src="assets/result/welcome-page2.png" width=270 height=480></td>
-    <td><img src="assets/result/welcome-page3.png" width=270 height=480></td>
-  </tr>
- </table>
+Welcome pages. Are shown, when the application is first opened.
 
 <table>
   <tr>
-    <td>Authorization Page.</td>
-    <td>Login Page.</td>
-    <td>Registration Page.</td>
+    <td>Welcome 1.</td>
+    <td>Welcome 2.</td>
+    <td>Welcome 3.</td>
   </tr>
   <tr>
-    <td><img src="assets/result/authorization-page.png" width=270 height=480></td>
-    <td><img src="assets/result/login-page.png" width=270 height=480></td>
-    <td><img src="assets/result/registration-page.png" width=270 height=480></td>
+    <td><img src="assets/result/welcome1.png" width=270 height=480></td>
+    <td><img src="assets/result/welcome2.png" width=270 height=480></td>
+    <td><img src="assets/result/welcome3.png" width=270 height=480></td>
+  </tr>
+ </table>
+
+Authorization pages, and authentication pages.
+
+<table>
+  <tr>
+    <td>Authorization.</td>
+    <td>Login.</td>
+    <td>Registration.</td>
+  </tr>
+  <tr>
+    <td><img src="assets/result/authorization.png" width=270 height=480></td>
+    <td><img src="assets/result/login.png" width=270 height=480></td>
+    <td><img src="assets/result/registration.png" width=270 height=480></td>
   </tr>
  </table>
