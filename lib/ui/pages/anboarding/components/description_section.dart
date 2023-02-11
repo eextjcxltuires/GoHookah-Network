@@ -2,15 +2,14 @@ import 'package:application/ui/pages/anboarding/widgets/page_widget.dart';
 import 'package:flutter/material.dart';
 
 class DescriptionSection extends StatelessWidget {
-  final PageController? controller;
-
-  final Function(int)? onPageChanged;
-
   const DescriptionSection({
     Key? key,
-    required this.controller,
     required this.onPageChanged,
+    required this.controller,
   }) : super(key: key);
+
+  final Function(int)? onPageChanged;
+  final PageController controller;
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +17,11 @@ class DescriptionSection extends StatelessWidget {
       onPageChanged: onPageChanged,
       controller: controller,
       children: const <Widget>[
-        // Widget: description section 1.
+        // description:
+        // the section, that displays the picture and the corresponding text.
+
+        // 1.
+
         PageWidget(
           image: 'assets/images/logotype_1.png',
           title: 'GohookahClub!',
@@ -26,7 +29,11 @@ class DescriptionSection extends StatelessWidget {
               'Проект, созданный любителями кальянной \nкультуры, для удобного поиска заведений \nи магазинов в своем городе.',
         ),
 
-        // Widget: description section 2.
+        // description:
+        // the section, that displays the picture and the corresponding text.
+
+        // 2.
+
         PageWidget(
           image: 'assets/images/logotype_2.png',
           title: 'Лучшие заведения',
@@ -34,7 +41,11 @@ class DescriptionSection extends StatelessWidget {
               'У нас собраны лучшие кальянные заведения\n в твоем городе с информацией о контактах,\n графике работы и кальянными мастерами.',
         ),
 
-        // Widget: description section 3.
+        // description:
+        // the section, that displays the picture and the corresponding text.
+
+        // 3.
+
         PageWidget(
           image: 'assets/images/logotype_3.png',
           title: 'Магазины',

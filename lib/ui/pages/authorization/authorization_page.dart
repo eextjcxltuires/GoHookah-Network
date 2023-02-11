@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-
-import 'components/logotype.dart';
-import 'components/lower_panel_description.dart';
+import 'components/authorization/authorization_lower_panel_description.dart';
+import 'components/authorization/auhorization_logotype.dart';
 
 class AuthorizationPage extends StatelessWidget {
   const AuthorizationPage({Key? key}) : super(key: key);
@@ -13,11 +12,15 @@ class AuthorizationPage extends StatelessWidget {
       body: Stack(
         alignment: Alignment.center,
         children: const <Widget>[
-          // Image: Logotype.
-          Logotype(),
+          // daisctiption:
+          // a picture is displayed (logotype).
 
-          // Lower panel description.
-          LowerPanelDescription(),
+          AuthorizationLogotype(),
+
+          // description:
+          // Lower panel.
+
+          AuthorizationLowerPanelDescription(),
         ],
       ),
     );

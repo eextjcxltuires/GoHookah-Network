@@ -1,10 +1,11 @@
+import 'package:application/ui/pages/authorization/login_page.dart';
+import 'package:application/ui/pages/authorization/widgets/lower_text_button_widget.dart';
 import 'package:application/ui/pages/home/home_page.dart';
 import 'package:application/ui/widgets/button_widget.dart';
-import 'package:application/ui/pages/authorization/authorization_page.dart';
 import 'package:flutter/material.dart';
 
-class LowerPanelButtons extends StatelessWidget {
-  const LowerPanelButtons({Key? key}) : super(key: key);
+class RegistrationLowerPanelDescription extends StatelessWidget {
+  const RegistrationLowerPanelDescription({Key? key}) : super(key: key);
 
   // description:
 
@@ -23,10 +24,10 @@ class LowerPanelButtons extends StatelessWidget {
   // the transition function,
   // which allows from one page to another.
 
-  void authorization(context) {
+  void login(context) {
     Navigator.push(
       context,
-      MaterialPageRoute(builder: (context) => const AuthorizationPage()),
+      MaterialPageRoute(builder: (context) => const LoginPage()),
     );
   }
 
@@ -35,25 +36,24 @@ class LowerPanelButtons extends StatelessWidget {
     return Align(
       alignment: Alignment.bottomCenter,
       child: Column(
-        mainAxisAlignment: MainAxisAlignment.end,
         children: <Widget>[
           // description:
           // custom button widget.
 
           ButtonWidget(
-            onPressed: () => authorization(context),
-            title: 'Авторизация',
+            onPressed: () => home(context),
             color: const Color(0xFFFFC107),
+            title: 'Зарегистрироваться',
           ),
-          const SizedBox(height: 10.0),
+          const SizedBox(height: 20.0),
 
           // description:
-          // custom button widget.
+          // Lower text button widget.
 
-          ButtonWidget(
-            onPressed: () => home(context),
-            title: 'Продолжить',
-            color: const Color(0xFF767676),
+          LowerTextButtonWidget(
+            onPressed: () => login(context),
+            part1: 'Есть аккаунт? ',
+            part2: ' Войдите!',
           ),
         ],
       ),

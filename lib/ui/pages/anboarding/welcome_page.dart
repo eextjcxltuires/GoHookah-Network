@@ -11,9 +11,8 @@ class WelcomePage extends StatefulWidget {
 }
 
 class _WelcomePageState extends State<WelcomePage> {
-  late PageController controller;
-
   int indicator = 0;
+  late PageController controller;
 
   @override
   void initState() {
@@ -44,17 +43,27 @@ class _WelcomePageState extends State<WelcomePage> {
         child: Stack(
           alignment: Alignment.center,
           children: <Widget>[
-            // Description section: logotype, title and description.
+            // description:
+            // the image and the corresponding text will be displayed. there is an animation.
+
             DescriptionSection(
               onPageChanged: (int page) => animation(page),
               controller: controller,
             ),
-            // Indicator.
+
+            // description:
+            // indicator, that reacts to changes.
+
             Indicator(
               indicator: indicator,
             ),
 
-            // Lower panel buttons.
+            // description:
+            // lower panel..
+
+            // to go to the home page or, the authorization
+            // and authentication page.
+
             const LowerPanelButtons(),
           ],
         ),

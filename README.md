@@ -48,39 +48,12 @@ file, main.dart:
 <table>
   <tr>
     <td>Authorization Page.</td>
+    <td>Login Page.</td>
+    <td>Registration Page.</td>
   </tr>
   <tr>
     <td><img src="assets/result/authorization-page.png" width=270 height=480></td>
-  </tr>
- </table>
-
-<table>
-  <tr>
-    <td>Login Page.</td>
-  </tr>
-  <tr>
     <td><img src="assets/result/login-page.png" width=270 height=480></td>
-  </tr>
- </table>
-
-<table>
-  <tr>
-    <td>Register Page.</td>
-  </tr>
-  <tr>
-    <td><img src="assets/result/register-page.png" width=270 height=480></td>
-  </tr>
- </table>
-
-<table>
-  <tr>
-    <td>Recovery Page.</td>
-    <td>Code Page.</td>
-    <td>Password Page.</td>
-  </tr>
-  <tr>
-    <td><img src="assets/result/forgot-password-page.png" width=270 height=480></td>
-    <td><img src="assets/result/code-page.png" width=270 height=480></td>
-    <td><img src="assets/result/change-password-page.png" width=270 height=480></td>
+    <td><img src="assets/result/registration-page.png" width=270 height=480></td>
   </tr>
  </table>

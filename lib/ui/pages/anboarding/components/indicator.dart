@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 
 class Indicator extends StatelessWidget {
-  final int indicator;
-
   const Indicator({
     Key? key,
     required this.indicator,
   }) : super(key: key);
+
+  final int indicator;
 
   @override
   Widget build(BuildContext context) {
