@@ -29,3 +29,31 @@ file, main.dart:
 
 - flutter run.
 ```
+
+### Review.
+
+<table>
+  <tr>
+    <td>Welcome Page - 1.</td>
+    <td>Welcome Page - 2.</td>
+    <td>Welcome Page - 3.</td>
+  </tr>
+  <tr>
+    <td><img src="assets/result/welcome-page1.png" width=270 height=480></td>
+    <td><img src="assets/result/welcome-page2.png" width=270 height=480></td>
+    <td><img src="assets/result/welcome-page3.png" width=270 height=480></td>
+  </tr>
+ </table>
+
+<table>
+  <tr>
+    <td>Authorization Page.</td>
+    <td>Login Page.</td>
+    <td>Registration Page.</td>
+  </tr>
+  <tr>
+    <td><img src="assets/result/authorization-page.png" width=270 height=480></td>
+    <td><img src="assets/result/login-page.png" width=270 height=480></td>
+    <td><img src="assets/result/registration-page.png" width=270 height=480></td>
+  </tr>
+ </table>
