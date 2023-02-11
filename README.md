@@ -47,7 +47,7 @@ Welcome pages. Are shown, when the application is first opened.
   </tr>
  </table>
 
-Authorization pages, and authentication pages.
+Authorization, and authentication pages.
 
 <table>
   <tr>
