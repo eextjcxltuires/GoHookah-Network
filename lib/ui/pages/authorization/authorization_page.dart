@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'components/authorization_lower_panel_description.dart';
-import 'components/auhorization_logotype.dart';
+import 'components/authorization/authorization_lower_panel_description.dart';
+import 'components/authorization/auhorization_logotype.dart';
 
 class AuthorizationPage extends StatelessWidget {
   const AuthorizationPage({Key? key}) : super(key: key);

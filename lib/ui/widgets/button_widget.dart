@@ -23,7 +23,7 @@ class ButtonWidget extends StatelessWidget {
         textColor: Colors.white,
         padding: const EdgeInsets.all(16),
         shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(100.0),
+          borderRadius: BorderRadius.circular(15.0),
         ),
 
         // description:

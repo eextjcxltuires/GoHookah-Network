@@ -1,8 +1,21 @@
 import 'package:application/ui/widgets/button_widget.dart';
+import 'package:application/ui/pages/authorization/login_page.dart';
 import 'package:flutter/material.dart';
 
 class AuthorizationLowerPanelDescription extends StatelessWidget {
   const AuthorizationLowerPanelDescription({Key? key}) : super(key: key);
+
+  // description:
+
+  // the transition function,
+  // which allows from one page to another.
+
+  void login(context) {
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => const LoginPage()),
+    );
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -32,9 +45,9 @@ class AuthorizationLowerPanelDescription extends StatelessWidget {
             // custom button widget.
 
             ButtonWidget(
+              onPressed: () => login(context),
               title: 'Войти',
               color: const Color(0xFFFFC107),
-              onPressed: () {},
             ),
             const SizedBox(height: 10.0),
 
