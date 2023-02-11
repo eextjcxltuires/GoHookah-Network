@@ -3,19 +3,14 @@ import 'package:application/ui/pages/authorization/components/login/login_lower_
 import 'package:flutter/material.dart';
 import 'widgets/text_field_widget.dart';
 
-class LoginPage extends StatefulWidget {
+class LoginPage extends StatelessWidget {
   const LoginPage({Key? key}) : super(key: key);
 
   @override
-  State<LoginPage> createState() => _LoginPageState();
-}
-
-class _LoginPageState extends State<LoginPage> {
-  TextEditingController mail = TextEditingController();
-  TextEditingController word = TextEditingController();
-
-  @override
   Widget build(BuildContext context) {
+    TextEditingController mail = TextEditingController();
+    TextEditingController word = TextEditingController();
+
     return Scaffold(
       backgroundColor: const Color(0xFF2B2B2B),
       body: Padding(
