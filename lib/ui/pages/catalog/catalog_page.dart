@@ -3,8 +3,8 @@ import 'components/panel_button.dart';
 import 'components/tab_bar_institution.dart';
 import 'components/text_field_search.dart';
 
-class HomePage extends StatelessWidget {
-  const HomePage({Key? key}) : super(key: key);
+class CatalogPage extends StatelessWidget {
+  const CatalogPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

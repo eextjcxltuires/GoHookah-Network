@@ -1,7 +1,9 @@
-import 'package:application/ui/pages/home/home_page.dart';
+import 'package:application/ui/pages/navigation_bar/bloc/navigation_bar_cubit.dart';
+import 'package:application/ui/pages/navigation_bar/custom_navigation_bar.dart';
 import 'package:application/ui/widgets/button_widget.dart';
 import 'package:application/ui/pages/authorization/authorization_page.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 class LowerPanelButtons extends StatelessWidget {
   const LowerPanelButtons({Key? key}) : super(key: key);
@@ -11,10 +13,15 @@ class LowerPanelButtons extends StatelessWidget {
   // the transition function,
   // which allows from one page to another.
 
-  void home(context) {
+  void catalog(context) {
     Navigator.push(
       context,
-      MaterialPageRoute(builder: (context) => const HomePage()),
+      MaterialPageRoute(
+        builder: (context) => BlocProvider<NavigationBarCubit>(
+          create: (context) => NavigationBarCubit(),
+          child: const CustomNavigationBar(),
+        ),
+      ),
     );
   }
 
@@ -51,7 +58,7 @@ class LowerPanelButtons extends StatelessWidget {
           // custom button widget.
 
           ButtonWidget(
-            onPressed: () => home(context),
+            onPressed: () => catalog(context),
             title: 'Продолжить',
             color: const Color(0xFF767676),
           ),

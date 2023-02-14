@@ -1,6 +1,6 @@
-import 'package:application/ui/pages/home/pages/filter_page.dart';
-import 'package:application/ui/pages/home/pages/map_page.dart';
-import 'package:application/ui/pages/home/widgets/button_widget.dart';
+import 'package:application/ui/pages/catalog/pages/filter_page.dart';
+import 'package:application/ui/pages/catalog/pages/map_page.dart';
+import 'package:application/ui/pages/catalog/widgets/button_widget.dart';
 import 'package:flutter/material.dart';
 
 class PanelButton extends StatelessWidget {
