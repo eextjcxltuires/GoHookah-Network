@@ -1,3 +1,5 @@
+import 'package:application/ui/pages/catalog/pages/place_page.dart';
+import 'package:application/ui/pages/catalog/pages/shop_page.dart';
 import 'package:flutter/material.dart';
 import 'components/panel_button.dart';
 import 'components/tab_bar_institution.dart';
@@ -62,12 +64,12 @@ class CatalogPage extends StatelessWidget {
                   // description:
                   // List: Hookah Place Card.
 
-                  Center(child: Text('Text 1.')),
+                  PlacePage(),
 
                   // description:
                   // List: Hookah Shop Card.
 
-                  Center(child: Text('Text 2.')),
+                  ShopPage(),
                 ],
               ),
             ),
