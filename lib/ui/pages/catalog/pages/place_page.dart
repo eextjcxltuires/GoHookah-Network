@@ -1,8 +1,35 @@
+import 'package:application/ui/pages/catalog/pages/detail_place_page.dart';
 import 'package:application/ui/pages/catalog/widgets/product_card/product_card_widget.dart';
 import 'package:flutter/material.dart';
 
+import 'map_page.dart';
+
 class PlacePage extends StatelessWidget {
   const PlacePage({Key? key}) : super(key: key);
+
+  // description:
+
+  // the transition function,
+  // which allows from one page to another.
+
+  void map(context) {
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => const MapPage()),
+    );
+  }
+
+  // description:
+
+  // the transition function,
+  // which allows from one page to another.
+
+  void detail(context) {
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => const DetailPlacePage()),
+    );
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -33,8 +60,8 @@ class PlacePage extends StatelessWidget {
                 closed_6: '6:00',
                 closed_7: '6:00',
                 phone: '+375 (29) 341-01-01',
-                onMap: () {},
-                onTap: () {},
+                onMap: () => map(context),
+                onTap: () => detail(context),
               );
             },
           ),

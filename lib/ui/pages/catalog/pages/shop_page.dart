@@ -1,8 +1,35 @@
 import 'package:application/ui/pages/catalog/widgets/product_card/product_card_widget.dart';
 import 'package:flutter/material.dart';
 
+import 'detail_shop_page.dart';
+import 'map_page.dart';
+
 class ShopPage extends StatelessWidget {
   const ShopPage({Key? key}) : super(key: key);
+
+  // description:
+
+  // the transition function,
+  // which allows from one page to another.
+
+  void map(context) {
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => const MapPage()),
+    );
+  }
+
+  // description:
+
+  // the transition function,
+  // which allows from one page to another.
+
+  void detail(context) {
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => const DetailShopPage()),
+    );
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -33,8 +60,8 @@ class ShopPage extends StatelessWidget {
                 closed_6: '21:00',
                 closed_7: '21:00',
                 phone: '+375 (29) 378-77-47',
-                onMap: () {},
-                onTap: () {},
+                onMap: () => map(context),
+                onTap: () => detail(context),
               );
             },
           ),

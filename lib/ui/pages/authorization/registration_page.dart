@@ -91,15 +91,18 @@ class RegistrationPage extends StatelessWidget {
 
   // the widget, that displays the text description.
 
-  Widget description() => const Text(
-        'Нажимая кнопку, Вы принимаете условия пользовательского соглашения и договоров.',
-        textAlign: TextAlign.center,
-        style: TextStyle(
-          fontFamily: 'SFProTextRegular',
-          color: Color(0xFFFFC107),
-          fontSize: 14.0,
-          fontWeight: FontWeight.w400,
-          letterSpacing: -0.08,
+  Widget description() => const Padding(
+        padding: EdgeInsets.fromLTRB(16.0, 0, 16.0, 0),
+        child: Text(
+          'Нажимая кнопку, Вы принимаете условия пользовательского соглашения и договоров.',
+          textAlign: TextAlign.center,
+          style: TextStyle(
+            fontFamily: 'SFProTextRegular',
+            color: Color(0xFFFFC107),
+            fontSize: 14.0,
+            fontWeight: FontWeight.w400,
+            letterSpacing: -0.08,
+          ),
         ),
       );
 }

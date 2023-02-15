@@ -13,7 +13,7 @@ class ButtonWidget extends StatelessWidget {
 
   final String link;
   final String text;
-  final Function() onChange;
+  final Function()? onChange;
   final double height;
   final double width;
 
