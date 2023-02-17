@@ -61,3 +61,49 @@ Authorization, and authentication pages.
     <td><img src="assets/result/registration.png" width=270 height=480></td>
   </tr>
  </table>
+
+Catalog page: a list of places, and detailed pages (hookah place, store).
+
+<table>
+  <tr>
+    <td>Place.</td>
+    <td>Store.</td>
+  </tr>
+  <tr>
+    <td><img src="assets/result/catalog-place-page.png" width=270 height=480></td>
+    <td><img src="assets/result/catalog-store-page.png" width=270 height=480></td>
+  </tr>
+ </table>
+
+<table>
+  <tr>
+    <td>Detail: Place 1.</td>
+    <td>Detail: Place 2.</td>
+  </tr>
+  <tr>
+    <td><img src="assets/result/detail-place1.png" width=270 height=480></td>
+    <td><img src="assets/result/detail-place2.png" width=270 height=480></td>
+  </tr>
+ </table>
+
+<table>
+  <tr>
+    <td>Detail: Store 1.</td>
+    <td>Detail: Store 2.</td>
+  </tr>
+  <tr>
+    <td><img src="assets/result/detail-store1.png" width=270 height=480></td>
+    <td><img src="assets/result/detail-store2.png" width=270 height=480></td>
+  </tr>
+ </table>
+
+Any other pages or, sections on the page (for example: maps, filter).
+
+<table>
+  <tr>
+    <td>Development.</td>
+  </tr>
+  <tr>
+    <td><img src="assets/result/development.png" width=270 height=480></td>
+  </tr>
+ </table>

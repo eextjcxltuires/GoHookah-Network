@@ -13,6 +13,12 @@ dependencies:
     sdk: flutter
 
   cupertino_icons: ^1.0.2
+  flutter_svg: ^1.1.6
+  flutter_bloc: ^8.1.2
+  equatable: ^2.0.5
+  bloc: ^8.1.1
+  url_launcher: ^6.1.9
+  readmore: ^2.2.0
 
 dev_dependencies:
   flutter_test:
