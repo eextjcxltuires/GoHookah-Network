@@ -1,3 +1,4 @@
+import 'package:application/ui/pages/catalog/widgets/detail_product_card/additional/additional_detail_product_card_widget.dart';
 import 'package:application/ui/pages/catalog/widgets/detail_product_card/fundamental/fundamental_detail_product_card_widget.dart';
 import 'package:flutter/material.dart';
 
@@ -50,6 +51,7 @@ class DetailPlacePage extends StatelessWidget {
                   closed_6: '6:00',
                   closed_7: '6:00',
                 ),
+                AdditionalDetailProductCardWidget(),
               ],
             ),
           ),

@@ -50,6 +50,7 @@ class DetailShopPage extends StatelessWidget {
                   closed_6: '21:00',
                   closed_7: '21:00',
                 ),
+                SizedBox(height: 15.0),
               ],
             ),
           ),

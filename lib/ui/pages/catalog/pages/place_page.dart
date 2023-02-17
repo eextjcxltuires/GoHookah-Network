@@ -39,7 +39,7 @@ class PlacePage extends StatelessWidget {
         Expanded(
           child: ListView.builder(
             padding: EdgeInsets.zero,
-            itemCount: 1,
+            itemCount: 4,
             itemBuilder: (context, index) {
               return ProductCardWidget(
                 title: 'HP Lounge Bar Yakuba Kolasa',

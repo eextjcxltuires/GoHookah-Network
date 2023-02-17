@@ -39,7 +39,7 @@ class ShopPage extends StatelessWidget {
         Expanded(
           child: ListView.builder(
             padding: EdgeInsets.zero,
-            itemCount: 1,
+            itemCount: 4,
             itemBuilder: (context, index) {
               return ProductCardWidget(
                 title: 'Hookah Market',

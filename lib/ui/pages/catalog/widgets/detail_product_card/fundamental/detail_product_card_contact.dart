@@ -41,7 +41,7 @@ class DetailProductCardContact extends StatelessWidget {
 
           networktitle(),
           Padding(
-            padding: const EdgeInsets.fromLTRB(0, 15.0, 0, 15.0),
+            padding: const EdgeInsets.fromLTRB(0, 15.0, 0, 0),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -81,7 +81,7 @@ class DetailProductCardContact extends StatelessWidget {
         'Социальные сети:',
         style: TextStyle(
           fontFamily: 'SFProTextRegular',
-          color: Color(0xFFF6F7FB),
+          color: Color(0xFF767676),
           fontWeight: FontWeight.w400,
           fontSize: 18.0,
           letterSpacing: 0.35,
