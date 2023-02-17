@@ -1,8 +1,10 @@
 import 'package:application/ui/pages/authorization/registration_page.dart';
-import 'package:application/ui/pages/catalog/catalog_page.dart';
+import 'package:application/ui/pages/navigation_bar/bloc/navigation_bar_cubit.dart';
+import 'package:application/ui/pages/navigation_bar/custom_navigation_bar.dart';
 import 'package:application/ui/widgets/button_widget.dart';
 import 'package:application/ui/pages/authorization/widgets/lower_text_button_widget.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 class LoginLowerPanelDescription extends StatelessWidget {
   const LoginLowerPanelDescription({Key? key}) : super(key: key);
@@ -15,7 +17,12 @@ class LoginLowerPanelDescription extends StatelessWidget {
   void catalog(context) {
     Navigator.push(
       context,
-      MaterialPageRoute(builder: (context) => const CatalogPage()),
+      MaterialPageRoute(
+        builder: (context) => BlocProvider<NavigationBarCubit>(
+          create: (context) => NavigationBarCubit(),
+          child: const CustomNavigationBar(),
+        ),
+      ),
     );
   }
 
