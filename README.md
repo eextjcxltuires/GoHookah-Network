@@ -1,8 +1,11 @@
 # GoHookah-Network.
 
-This application was written in the studio. Initially, it was as an application for an internship, where they could evaluate my knowledge. Subsequently, when they saw, that I could write the application, they found investors, and the application went from a test version to a commercial one.
+This application was written in the studio. Initially it was for an internship, where they could evaluate my knowledge. Subsequently, when they saw that I could write the application, they found investors, and the application went from a test version to a commercial one.
 
-After, I left the studio, had limited access to the previously written and did not have the source code. In this repository I am trying to at least some part of the past application, but without affecting the copyrights.
+Afterwards, I left the studio, had limited access to what I had previously written, and had no source code. In this repository, I am trying to at least partially restore the past app, but without affecting the copyright.
+
+
+There is no authorization with authentication, and some pages are missing. On top of that, the data used to come from the server and was connected: database, caching.
 
 ## Getting Started.
 
